@@ -13,4 +13,6 @@ class AppStringConstants {
   final String signOutlinedButtonText2 = 'Apple ID';
   final String signTextButtonText =
       'By Continuing you agree to the Terms of Conditious';
+  final String homeAppBarTitle = 'Home';
+  final String homeTitle = 'Hello Nuri Ulgen';
 }

@@ -17,6 +17,7 @@ extension ContextExtension on BuildContext {
   EdgeInsets get potb70 => const EdgeInsets.only(top: 70, bottom: 20);
 
   // HEIGHT
+  double get h20 => 20;
   double get h50 => 50;
   double get h250 => 250;
   double get w375 => 375;
