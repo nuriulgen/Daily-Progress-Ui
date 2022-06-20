@@ -7,6 +7,7 @@ import '../product/utils/text_style.dart';
 import '../product/widget/custom_elevated_button.dart';
 import '../product/widget/custom_outlined_button.dart';
 import '../product/widget/custom_text_button.dart';
+import 'home_view.dart';
 
 class SignInView extends StatelessWidget {
   SignInView({Key? key}) : super(key: key);
@@ -81,7 +82,9 @@ class SignInView extends StatelessWidget {
   StadiumElevatedBTN _createElevatedButton(BuildContext context) {
     return StadiumElevatedBTN(
       context: context,
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (_) => HomeView()));
+      },
       child: Center(
           child: Text(
         appStringConstants!.signElevatedButtonText,

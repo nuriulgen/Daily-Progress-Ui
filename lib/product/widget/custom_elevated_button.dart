@@ -12,7 +12,7 @@ class StadiumElevatedBTN extends ElevatedButton {
   }) : super(
           key: key,
           onPressed: onPressed,
-          child: Padding(padding: context.p10, child: child),
+          child: child,
           style: ButtonStyle(
             shape:
                 MaterialStateProperty.all<StadiumBorder>(const StadiumBorder()),

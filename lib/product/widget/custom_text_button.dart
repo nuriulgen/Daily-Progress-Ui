@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TextBTN extends TextButton {
   final BuildContext context;
-  TextBTN({
+  const TextBTN({
     Key? key,
     required VoidCallback? onPressed,
     required Widget child,

@@ -15,4 +15,9 @@ class AppStringConstants {
       'By Continuing you agree to the Terms of Conditious';
   final String homeAppBarTitle = 'Home';
   final String homeTitle = 'Hello Nuri Ulgen';
+  final String homeElevatedButtonText = 'Overview';
+  final String homeOutlinedButtonText = 'Productivity';
+  final String homeSecondTitle = 'Category';
+  final String cardTitle = 'Daily Progress';
+  final String cardSubTitle = 'Here you can see your daily task';
 }
