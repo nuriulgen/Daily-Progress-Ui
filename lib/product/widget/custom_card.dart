@@ -24,20 +24,20 @@ class CustomCard extends StatelessWidget {
     return Card(
       color: const Color(0xff333333),
       shape: roundedRectangleBorder,
-      elevation: context.h10,
+      elevation: context.hw10,
       child: Padding(
         padding: context.pv10 + context.ph10,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _createListTile(context),
-            SizedBox(height: context.h20),
+            SizedBox(height: context.hw20),
             Padding(
               padding: context.ph20,
               child: Row(
                 children: [
                   progressIndicatorView(context),
-                  SizedBox(width: context.w5),
+                  SizedBox(width: context.hw5),
                   numberTextView(context),
                 ],
               ),
@@ -58,7 +58,7 @@ class CustomCard extends StatelessWidget {
 
   Container progressIndicatorView(BuildContext context) {
     return Container(
-      height: context.h5,
+      height: context.hw5,
       width: widthProgress,
       color: colorProgress,
     );

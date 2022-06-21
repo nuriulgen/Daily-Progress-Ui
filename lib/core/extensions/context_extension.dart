@@ -17,20 +17,15 @@ extension ContextExtension on BuildContext {
   EdgeInsets get potb20 => const EdgeInsets.only(top: 20, bottom: 20);
   EdgeInsets get potb70 => const EdgeInsets.only(top: 70, bottom: 20);
 
-  // HEIGHT
-  double get h5 => 5;
-  double get h10 => 10;
-  double get h20 => 20;
-  double get h50 => 50;
-  double get h140 => 140;
-  double get h150 => 150;
-  double get h250 => 250;
-
-  double get w5 => 5;
-  double get w20 => 20;
-  double get w30 => 30;
-  double get w50 => 50;
-  double get w165 => 165;
-  double get w250 => 250;
-  double get w375 => 375;
+  // HEIGHT- WIDTH
+  double get hw5 => 5;
+  double get hw10 => 10;
+  double get hw20 => 20;
+  double get hw30 => 30;
+  double get hw50 => 50;
+  double get hw140 => 140;
+  double get hw150 => 150;
+  double get hw250 => 250;
+  double get hw165 => 165;
+  double get hw375 => 375;
 }
