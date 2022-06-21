@@ -48,8 +48,8 @@ class SignInView extends StatelessWidget {
 
   SizedBox _createImage(BuildContext context) {
     return SizedBox(
-      height: context.h250,
-      width: context.w375,
+      height: context.hw250,
+      width: context.hw375,
       child: PngImage(name: imagePath),
     );
   }
