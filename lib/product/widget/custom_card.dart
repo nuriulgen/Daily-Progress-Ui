@@ -6,6 +6,7 @@ class CustomCard extends StatelessWidget {
   final String subTitle;
   final double widthProgress;
   final Color colorProgress;
+  final String numberText;
 
   CustomCard({
     Key? key,
@@ -13,6 +14,7 @@ class CustomCard extends StatelessWidget {
     required this.subTitle,
     required this.widthProgress,
     required this.colorProgress,
+    required this.numberText,
   }) : super(key: key);
   final roundedRectangleBorder =
       RoundedRectangleBorder(borderRadius: BorderRadius.circular(20));
@@ -30,15 +32,28 @@ class CustomCard extends StatelessWidget {
           children: [
             _createListTile(context),
             SizedBox(height: context.h20),
-            SizedBox(height: context.h10),
             Padding(
               padding: context.ph20,
-              child: progressIndicatorView(context),
+              child: Row(
+                children: [
+                  progressIndicatorView(context),
+                  SizedBox(width: context.w5),
+                  numberTextView(context),
+                ],
+              ),
             ),
           ],
         ),
       ),
     );
+  }
+
+  Text numberTextView(BuildContext context) {
+    return Text(numberText,
+        style: Theme.of(context)
+            .textTheme
+            .titleSmall
+            ?.copyWith(color: Colors.white));
   }
 
   Container progressIndicatorView(BuildContext context) {

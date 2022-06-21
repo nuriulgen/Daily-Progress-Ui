@@ -19,5 +19,13 @@ class AppStringConstants {
   final String homeOutlinedButtonText = 'Productivity';
   final String homeSecondTitle = 'Category';
   final String cardTitle = 'Daily Progress';
+  final String cardTitle1 = 'Books';
+  final String cardTitle2 = 'Email';
+  final String cardTitle3 = 'Work';
+  final String cardTitle4 = 'Urgent';
   final String cardSubTitle = 'Here you can see your daily task';
+  final String cardSubTitle1 = '7 New';
+  final String cardSubTitle2 = '5 New';
+  final String cardSubTitle3 = '2 New';
+  final String cardSubTitle4 = '13 New';
 }

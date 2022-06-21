@@ -22,10 +22,15 @@ extension ContextExtension on BuildContext {
   double get h10 => 10;
   double get h20 => 20;
   double get h50 => 50;
-  double get h180 => 180;
+  double get h140 => 140;
+  double get h150 => 150;
   double get h250 => 250;
+
+  double get w5 => 5;
   double get w20 => 20;
+  double get w30 => 30;
   double get w50 => 50;
+  double get w165 => 165;
   double get w250 => 250;
   double get w375 => 375;
 }
