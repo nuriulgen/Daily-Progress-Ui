@@ -13,6 +13,7 @@ extension ContextExtension on BuildContext {
   EdgeInsets get pv20 => const EdgeInsets.symmetric(vertical: 20);
   EdgeInsets get ph10 => const EdgeInsets.symmetric(horizontal: 10);
   EdgeInsets get ph20 => const EdgeInsets.symmetric(horizontal: 20);
+  EdgeInsets get ph50 => const EdgeInsets.symmetric(horizontal: 80);
   EdgeInsets get porl20 => const EdgeInsets.only(right: 20, left: 20);
   EdgeInsets get potb20 => const EdgeInsets.only(top: 20, bottom: 20);
   EdgeInsets get potb70 => const EdgeInsets.only(top: 70, bottom: 20);
@@ -23,6 +24,8 @@ extension ContextExtension on BuildContext {
   double get hw20 => 20;
   double get hw30 => 30;
   double get hw50 => 50;
+  double get hw100 => 100;
+  double get hw130 => 130;
   double get hw140 => 140;
   double get hw150 => 150;
   double get hw250 => 250;

@@ -2,7 +2,6 @@ import 'package:daily_progress_ui/core/extensions/context_extension.dart';
 import 'package:daily_progress_ui/view/profile_view.dart';
 import 'package:flutter/material.dart';
 
-import '../core/constants/image_constants.dart';
 import '../core/constants/string_constants.dart';
 import '../product/widget/custom_elevated_button.dart';
 import '../product/widget/custom_listTile.dart';
@@ -14,6 +13,7 @@ class DailyProgressView extends StatelessWidget {
   final String appBarTitle = "Daily Progress";
   final String imagePath = 'avatar';
   final String hintTitle = 'Search';
+  final String path = 'assets/images/avatar.png';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,8 +26,8 @@ class DailyProgressView extends StatelessWidget {
                   context, MaterialPageRoute(builder: (_) => ProfileView()));
             },
             child: CircleAvatar(
-              radius: context.hw20,
-              child: PngImage(name: imagePath),
+              backgroundImage: AssetImage(path),
+              radius: 20,
             ),
           ),
         ),
@@ -48,31 +48,31 @@ class DailyProgressView extends StatelessWidget {
             CustomListTile(
               color: Colors.green,
               icon: Icons.book_outlined,
-              title: appStringConstants!.profilListTileTitle1,
+              title: appStringConstants!.dailyListTileTitle1,
             ),
             SizedBox(height: context.hw10),
             CustomListTile(
               color: Colors.indigoAccent,
               icon: Icons.alarm_add_outlined,
-              title: appStringConstants!.profilListTileTitle2,
+              title: appStringConstants!.dailyListTileTitle2,
             ),
             SizedBox(height: context.hw10),
             CustomListTile(
               color: Colors.deepOrange,
               icon: Icons.archive_outlined,
-              title: appStringConstants!.profilListTileTitle3,
+              title: appStringConstants!.dailyListTileTitle3,
             ),
             SizedBox(height: context.hw10),
             CustomListTile(
               color: Colors.redAccent,
               icon: Icons.check,
-              title: appStringConstants!.profilListTileTitle5,
+              title: appStringConstants!.dailyListTileTitle5,
             ),
             SizedBox(height: context.hw10),
             CustomListTile(
               color: Colors.cyan,
               icon: Icons.ac_unit_outlined,
-              title: appStringConstants!.profilListTileTitle4,
+              title: appStringConstants!.dailyListTileTitle4,
             ),
           ],
         ),

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class CustomListTile extends StatelessWidget {
   CustomListTile(
-      {Key? key, required this.title, required this.icon, required this.color})
+      {Key? key, required this.title, this.icon, required this.color})
       : super(key: key);
   final String title;
-  final IconData icon;
+  final IconData? icon;
   final Color color;
   _HeightItems heightItems = _HeightItems();
   @override

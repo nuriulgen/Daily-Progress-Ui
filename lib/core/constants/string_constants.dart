@@ -33,9 +33,15 @@ class AppStringConstants {
 
   final String profilElevatedButtonText = 'All';
   final String profilOutlinedButtonText = 'Favorite';
-  final String profilListTileTitle1 = 'Fix landing page';
-  final String profilListTileTitle2 = 'Read the learn startup';
-  final String profilListTileTitle3 = 'Reply to Nuri';
-  final String profilListTileTitle4 = 'Finalize pitch deck';
-  final String profilListTileTitle5 = 'Share prototype with team';
+  final String dailyListTileTitle1 = 'Fix landing page';
+  final String dailyListTileTitle2 = 'Read the learn startup';
+  final String dailyListTileTitle3 = 'Reply to Nuri';
+  final String dailyListTileTitle4 = 'Finalize pitch deck';
+  final String dailyListTileTitle5 = 'Share prototype with team';
+
+  final String profilSubtitle = 'nuriulgen07@gmail.com';
+  final String profilButtonText = 'Edit Profile';
+  final String profilText = 'Turn on Notifications';
+  final String profilText2 = 'Invite Link';
+  final String profilTextButton = 'Log Out';
 }
